@@ -38,6 +38,15 @@ jobs:
       - name: Run offline regression suite
         env:
           NODE_PATH: ${{ github.workspace }}/skills/textferry/assets/word-math/node_modules
-        run: uv run --project skills/textferry --python '${{ matrix.python }}' --frozen --group dev --extra word python -m pytest tests -q -p no:cacheprovider
+          TEXTFERRY_NODE: node
+        run: |
+          uv run --project skills/textferry --python '${{ matrix.python }}' --frozen --group dev --extra word python -m pytest tests -q -p no:cacheprovider --junitxml="$RUNNER_TEMP/textferry-tests.xml"
+          python - <<'PY'
+          import os
+          from xml.etree import ElementTree as ET
+          report = ET.parse(os.path.join(os.environ['RUNNER_TEMP'], 'textferry-tests.xml'))
+          skipped = sum(int(suite.get('skipped', 0)) for suite in report.iter('testsuite'))
+          assert skipped == 0, f'Expected the complete suite; {skipped} tests were skipped'
+          PY
       - name: Build Python distributions
         run: uv build --project skills/textferry
