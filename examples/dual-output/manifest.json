@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "title": "古籍版式示例（自制）",
+  "edition": "2026 自制一页竖排版式测试",
+  "scope_description": "一页自制版式材料，覆盖完整测试 PDF；不是实际古籍整理成果。",
+  "contribution_license": "CC0-1.0",
+  "source_rights": {
+    "basis": "permission",
+    "jurisdiction": "CN",
+    "statement": "本示例的现代测试文字与版式由本项目自制，允许公开复用；经文短句为古典原文。",
+    "evidence": [
+      "自制示例源程序：skills/textferry/scripts/make_samples.py。示例不含现代古籍整理本内容。"
+    ]
+  },
+  "source_pdf_sha256": "8e5ab924e9e34f8d4efc036a2310d32d0d62abb8dfadeda9a77f771e8ddb4808",
+  "kind": "classical",
+  "total_pages": 1,
+  "coverage": "complete_input_pdf",
+  "script_target": "original",
+  "quality": "reviewed",
+  "rights_review": "contributor_statement_unverified",
+  "review_scope": {
+    "reviewed_pages": [
+      1
+    ],
+    "partially_checked_pages": [],
+    "stale_review_pages": [],
+    "unresolved_pages": []
+  },
+  "license_scope": "贡献许可仅适用于贡献者实际拥有的新增权利；底本文字权利按 source_rights 逐项说明。",
+  "content": "content.md",
+  "content_sha256": "e60de9db4c1ca966b81d3e785d15e4503a2103ab22e4bf5394b4754307ef9222",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "start": 18,
+      "end": 162,
+      "text_sha256": "55fed76d96d00474b8ba81951cd549df6c0ebfd1255fb403610cb32f88e46b6e"
+    }
+  ],
+  "additional_texts": {
+    "machine.md": "19db13c731bdb79f90c87d871815cc6480fb188d5b6390bff6cabc80ef918eb0",
+    "handwashed.md": "c7b7ea850663cb67ce9108a2f9abe5325465217f713e42ee8161b727e6f66a51"
+  },
+  "machine_pages": [
+    {
+      "pdf_page": 1,
+      "start": 18,
+      "end": 187,
+      "text_sha256": "ff341659ce5a287d63c5ba98dec85b4465e84eecfdb00868db1de255a1007814"
+    }
+  ],
+  "handwash": {
+    "status": "handwashed",
+    "covered_pages": [
+      1
+    ],
+    "page_numbers": "hide",
+    "academic_clearance": false
+  },
+  "id": "0a16d4469daa1c4695093373"
+}

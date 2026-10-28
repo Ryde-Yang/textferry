@@ -1,0 +1,5 @@
+# Optional OpenAI/Codex display metadata; the core does not read this file.
+interface:
+  display_name: "TextFerry · 文献转换与整理"
+  short_description: "先选基础或 AI 整理，再选 Markdown 或 Word，保留可回查底稿"
+  default_prompt: "使用 $textferry 处理这份中文 PDF 或 EPUB，先让我选择基础转换或 AI 整理校正，再确认输出 Markdown 或 Word。"

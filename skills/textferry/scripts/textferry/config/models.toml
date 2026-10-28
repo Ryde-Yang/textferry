@@ -1,0 +1,21 @@
+# input: textferry OCR provider 的模型选择、模型 id、prompt 与停止 token
+# output: 运行时可加载的默认模型选项和模型注册表，区分百度VL-1.5与VL-1.6
+# pos: textferry 模型配置文件
+[defaults]
+model_option = "deepseek_ocr"
+
+[model_options.deepseek_ocr]
+display_name = "DeepSeek-OCR"
+model_id = "deepseek-ai/DeepSeek-OCR"
+prompt_template = "<image>\n<|grounding|>Convert the document to markdown."
+
+[model_options.paddleocr_vl]
+display_name = "PaddleOCR-VL"
+model_id = "PaddleOCR-VL-1.5"
+prompt_template = "You are an OCR engine for Chinese historical books. Output only the visible body text in natural reading order with paragraph line breaks. Do not output any tags, control tokens, XML/HTML, or explanations."
+stop_tokens = ["<|begin>", "</|grounding>", "<fcel>", "<nl>", "<|end>", "</|begin>"]
+
+[model_options.paddleocr_vl_16]
+display_name = "PaddleOCR-VL-1.6"
+model_id = "PaddleOCR-VL-1.6"
+prompt_template = "You are an OCR engine for Chinese historical books. Output only the visible body text in natural reading order with paragraph line breaks. Do not output any tags, control tokens, XML/HTML, or explanations."

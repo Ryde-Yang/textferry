@@ -1,0 +1,10 @@
+{
+  "name": "textferry-word-math",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@11.25.0",
+  "dependencies": {
+    "mathjax-full": "3.2.2",
+    "sharp": "0.35.5"
+  }
+}

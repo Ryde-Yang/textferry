@@ -1,0 +1,8 @@
+include SKILL.md NOTICE LICENSE uv.lock
+recursive-include agents *.yaml
+recursive-include references *.md
+recursive-include scripts *.py *.toml *.cjs
+recursive-include assets/word-math *.json *.yaml
+prune .venv
+prune build
+prune dist

@@ -1,0 +1,20 @@
+TextFerry
+
+PDF-to-Markdown conversion, local OCR credentials, source-preserving capture,
+scoped page review and handwashed text export.
+
+Project code is licensed under GNU AGPL-3.0-only. See LICENSE.
+Third-party packages keep their own licenses and are installed separately.
+PyMuPDF / MuPDF is dual licensed under GNU AGPL 3.0 or an Artifex commercial
+license. httpx uses BSD-3-Clause, python-docx MIT, and
+opencc-python-reimplemented Apache License. See each installed distribution
+for its complete license text, including licenses of transitive dependencies.
+
+Optional Word export uses pypandoc-binary (MIT wrapper) and its bundled
+Pandoc executable, distributed separately under Pandoc's own license.
+See https://github.com/JessicaTegner/pypandoc and
+https://github.com/jgm/pandoc/blob/main/COPYING.md.
+
+Optional compatible equation images use MathJax and sharp (Apache-2.0),
+provided or installed separately. Their dependencies retain their licenses.
+See https://github.com/mathjax/MathJax-src and https://github.com/lovell/sharp.
